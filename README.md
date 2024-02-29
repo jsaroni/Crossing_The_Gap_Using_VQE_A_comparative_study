@@ -62,8 +62,7 @@ These compelling findings highlight SS-VQE's potential to transform the landscap
 
 ![Exp1_Noiseless](/Figures/SSVQE_LiH_sz1.png "Noiseless")
 
-
-
+<img src="https://github.com/jsaroni/QHack_2024_Qjins_Project/tree/main/Figures/SSVQE_LiH_sz1.png" width="250" height="250" style="max-width: 100%;">
 
 
 
