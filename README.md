@@ -86,3 +86,39 @@ For the \(H_2\) molecule, initial optimization efforts using traditional gradien
 * Final QNG Energy: \(-1.13618926\) Ha after 16 iterations.
 
 
+
+The optimization for the \(LiH\) molecule demonstrated the QNG optimizer's ability to reduce the energy across iterations consistently. The final ground state energy attained via QNG optimization was \(-7.60898098\) Ha, showcasing a significant improvement over traditional methods:
+
+\begin{itemize}
+    \item Initial Energy: \(-3.80567655\) Ha.
+    \item Final GD Energy: \(-7.60440889\) Ha after 190 iterations.
+    \item Final QNG Energy: \(-7.60898098\) Ha after 190 iterations.
+\end{itemize}
+
+For \(BeH_2\), both optimization approaches converged to a similar energy value, indicating the potential limitations of traditional optimization methods for more complex molecular systems. The final energies underscore the precision of QNG in fine-tuning the variational parameters:
+
+\begin{itemize}
+    \item Initial Energy: \(-4.62101342\) Ha.
+    \item Final GD Energy: \(-13.08284703\) Ha after 140 iterations.
+    \item Final QNG Energy: \(-13.08286007\) Ha after 10 iterations.
+\end{itemize}
+
+
+As presented in Fig. \ref{fig:energy-convergence}, these results clearly illustrate the advantage of employing the QNG in the VQE algorithm, particularly in terms of efficiency and convergence speed. The marked improvement in optimization performance across different molecular systems underscores the potential of QNG to enhance quantum computational chemistry applications. Fig. \ref{fig:gs} shows energy estimations across various atomic distances using QNG and adaptive VQE for $LiH$ \cite{AdaptiveVQE}. This approach includes a recipe to adaptively select gates that have a significant contribution to the desired state. We select only gates that have a predefined threshold above $10^{-5}$. The results closely match the expected from exact diagonalization exemplifying QNG quantum chemistry applicability.
+
+
+### Exploring algorithm speed improvement
+In addition to using QNG to reduce the number of iterations for convergence, we apply Pauli tapering, leveraging $Z_2$ molecular hamiltonian symmetries to reduce the number of qubits required for the VQE simulation. Additionally, we test the use of the MERA tensor network ansatz \cite{PhysRevLett.101.110501} and find that it greatly improves the speed at which a SSVQE custom algorithm finds the first excited state at the expense of accuracy at certain distance values as shown in Fig.~\ref{fig:tensorLiH}. 
+
+
+## Conclusion
+
+Our investigation into advanced variational quantum algorithms, notably SS-VQE, VQD, Folded Spectrum VQE, and VQE with QNG, illuminates the path forward in quantum computational chemistry. These methodologies, each with its unique approach to navigating the challenges of quantum optimization, collectively underscore a significant leap toward harnessing quantum computing's potential for chemical and material science.
+SS-VQE and VQD have demonstrated robust capabilities in accurately determining the spectral gap of chemical molecules, a critical parameter influencing material properties. With precision that approaches near-exactness, particularly noted in the spectral gap analysis of LiH with less than 1\% relative error, these strategies highlight the precision achievable with quantum computational approaches.
+
+Folded Spectrum VQE further extends the versatility of quantum algorithms to identify highly excited states, offering a broader understanding of molecular dynamics and energetics. By facilitating a comprehensive view of the energy spectrum, this approach enriches our ability to predict and manipulate chemical behaviors at a quantum level.
+
+Most notably, QNG stands out for its efficiency, significantly reducing the number of iterations required for convergence. By intelligently navigating the optimization landscape, QNG enhances computational efficiency and sets a new standard for precision in quantum computing optimizations.
+Looking ahead, the convergence of these advanced quantum computational methods opens new horizons for exploring chemical molecules in unprecedented detail. This study's remarkable accuracy and efficiency beckon a future where quantum computing plays a central role in unraveling complex chemical mysteries, potentially revolutionizing our approach to material synthesis, drug discovery, and beyond. As we refine these algorithms and adapt them to more complex systems, the promise of quantum computational chemistry to contribute meaningful insights into the natural world becomes increasingly tangible.
+
+
