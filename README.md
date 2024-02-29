@@ -49,21 +49,21 @@ By accounting for the parameter space's geometry, the QNG optimizer significantl
 
 Algorithm~\ref{alg:VQE_QNG} delineates the procedural steps for incorporating QNG optimization within the VQE.
 
-\begin{algorithm}
-\caption{VQE with QNG}\label{alg:VQE_QNG}
-\begin{algorithmic}[1]
-\Require Hamiltonian $H$ of the quantum system, variational ansatz $U(\boldsymbol{\theta})$, initial parameters $\boldsymbol{\theta}_0$, learning rate $\eta$
-\Ensure Optimized parameters $\boldsymbol{\theta}^*$ minimizing the expectation value $\langle H \rangle_{\boldsymbol{\theta}}$
-\State Initialize parameters $\boldsymbol{\theta} \gets \boldsymbol{\theta}_0$
-\While{not converged}
-    \State Evaluate the objective function $f(\boldsymbol{\theta}) = \langle U(\boldsymbol{\theta})^\dagger | H | U(\boldsymbol{\theta}) \rangle$
-    \State Compute the gradient $\nabla f(\boldsymbol{\theta})$ with respect to $\boldsymbol{\theta}$
-    \State Compute the Fubini-Study metric tensor $g(\boldsymbol{\theta})$
-    \State Update the parameters using QNG:
-    $\boldsymbol{\theta} \gets \boldsymbol{\theta} - \eta g(\boldsymbol{\theta})^{-1} \nabla f(\boldsymbol{\theta})$
-    \State Check for convergence (e.g., change in $f(\boldsymbol{\theta})$ is below a threshold)
-\EndWhile
-\State $\boldsymbol{\theta}^* \gets \boldsymbol{\theta}$
-\State \textbf{return} $\boldsymbol{\theta}^*$
-\end{algorithmic}
-\end{algorithm}
+### Results
+In our study, we meticulously analyzed the efficacy of the SS-VQE for calculating the energy states of $LiH$, emphasizing its performance in different spin subspaces. The results are distilled into Figs. \ref{ess1} and \ref{ess2} show the energy profiles for the ground and excited states at $S_z=0$ and $S_z=1$ cases respectively.
+Fig. \ref{ess1} reveals the SS-VQE's proficiency in approximating the singlet ground state (S0) and triplet first excited state (T1) of $LiH$ at $S_z=0$. The alignment of SS-VQE results with the exact theoretical calculations is particularly noteworthy for shorter bond lengths, a region crucial for understanding chemical bonding and reactions. The observed convergence of energy values at increased atomic separations reflects the algorithm's capability to capture the dissociative characteristics of the molecule, demonstrating its robustness in quantum state representation for non-interacting atomic scenarios.
+Fig. \ref{ess1}  extends this comparison to $S_z=1$, offering insights into the SS-VQE's ability to model excited spin states accurately. The close correlation between SS-VQE and exact calculations for T1 and T2 states across various atomic distances underscores the versatility of the algorithm. This precision holds even as the bond lengthens, indicating that SS-VQE can adeptly model the $LiH$ molecule's behavior under stretched conditions, which is vital for simulating molecular dynamics.
+
+
+In Fig. \ref{rss1}, the relative error for the S0 and T1 states at $S_z=0$ is quantified, exhibiting SS-VQE's remarkable precision with errors maintained below 0.8\%. This high accuracy is retained across the spectrum of bond lengths, confirming the algorithm's exceptional ability to capture quantum mechanical interactions within the molecule.
+Fig. \ref{rss2}  further corroborates the method's precision, where the SS-VQE sustains an impressively low relative error for the T1 and T2 states at $S_z=1$. With errors well below 0.003\%, SS-VQE is an invaluable tool for precisely estimating quantum states, particularly in molecules exhibiting non-zero spin states.
+
+These compelling findings highlight SS-VQE's potential to transform the landscape of quantum computational chemistry. The accuracy and precision demonstrated in this study pave the way for advanced modeling of molecular systems, offering a new lens through which we can observe and predict the quantum behavior of chemical substances. The implications of this work are profound, promising advancements in fields ranging from material science to pharmaceutical development, where the understanding of quantum states is fundamental.
+
+
+
+
+
+
+
+
