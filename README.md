@@ -15,7 +15,7 @@ This approach minimize the following loss function
 ```
 
 where the cost $\mathcal{L}_w$ gets its global optimum, the circuit $U(\theta)$ maps $\ket{\psi_k}$ to the k-th excited state $\ket{E_k}$ of the Hamiltonian(H) and others to the
-subspace spanned by $\sum_{j=0}^{k-1} E_j$.
+subspace spanned by $`\sum_{j=0} ^{k-1} E_j`$.
 
 ###Variational Quantum Deflation
 
