@@ -9,15 +9,15 @@ Additionally, our comparative analysis reveals that both subspace variational qu
 ### Subspace-Search Variational Quantum Eigensolver
 The Subspace-Search Variational Quantum Eigensolver (SS-VQE) is an algorithm designed to address the challenge of calculating excited states \cite{PhysRevResearch.1.033062}. SS-VQE efficiently explores a low-energy subspace to identify the k-th excited state by utilizing orthogonal input states and leveraging unitary transformations. It is worth noting that this method involves only two parameter optimization steps and eliminates the necessity for ancilla qubits. SS-VQE further generalizes all excited states up to the k-th through a single optimization procedure. Through careful parameter optimization, this approach ensures the orthogonality of input states and accurately maps them to energy eigenstates.
 This approach minimize the following loss function 
-\begin{align}
+$$
 \mathcal{L}_w(\theta) = & w\bra{\psi_k}U^\dagger(\theta)HU(\theta)\ket{\psi_k} \\
 & +\sum_{j=0}^{k-1}\bra{\psi_j}U^\dagger(\theta)HU(\theta)\ket{\psi_j}
-\end{align}
+$$
 
 where the cost $\mathcal{L}_w$ gets its global optimum, the circuit $U(\theta)$ maps $\ket{\psi_k}$ to the k-th excited state $\ket{E_k}$ of the Hamiltonian(H) and others to the
 subspace spanned by $\sum_{j=0}^{k-1} E_j$.
 
-\subsection{Variational Quantum Deflation}
+###Variational Quantum Deflation
 
 The potential of VQE for near-term quantum computing is generating excitement for the advancement of computational capabilities.  \cite{Higgott2019variationalquantum} study aims to enhance VQE's functionality by efficiently identifying excited states. By incorporating ``overlap'' terms into the optimization function and leveraging Hermitian matrices, which consist of a complete set of orthogonal eigenvectors, this work demonstrates a cost-effective approach. Utilizing VQE's ability to maintain classical parameters, low-depth quantum circuits are employed to compute these overlap terms. This methodology maintains the same qubit count as VQE for ground-state calculations, with only a minor increase in measurements. In contrast to existing methods for computing excited states in quantum computing, this approach minimizes resource overhead. The following loss function has been provided over this work. 
 \begin{align}
