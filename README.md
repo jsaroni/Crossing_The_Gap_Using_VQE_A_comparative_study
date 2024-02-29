@@ -67,6 +67,11 @@ These compelling findings highlight SS-VQE's potential to transform the landscap
 
 
 
+The VQD approach has been meticulously evaluated for its ability to predict the energy states of $LiH$, focusing on its performance across different spin subspaces, $S_z=0$ and (b) $S_z=1$. The analyses encompass both the accuracy of the energy estimations and the relative errors in these calculations.
+The energy profiles of $LiH$ obtained via VQD display remarkable fidelity to the exact theoretical calculations, with a pronounced accuracy in the chemically significant region of shorter bond lengths. As shown in Figs. \ref{VQD1} and \ref{VQD2}, VQD's calculated energies for the ground and excited states at$S_z=0$ and  $S_z=1$, respectively, closely track the exact values across a range of atomic separations. This agreement is particularly noticeable in the molecular dissociation limit, where VQD and exact calculations predict the energy levels' convergence toward a constant value.
+
+The relative error analyses are shown in Figs. \ref{rVQD1} and \ref{rVQD2} for $S_z=0$ and $S_z=1$, further underscore the precision of the VQD approach. The errors remain exceptionally low, with the largest observed errors not exceeding 0.0175\% for $S_z=0$ and peaking just below 0.0010\% for the excited states at $S_z=1$ These low relative errors across the atomic units underscore the VQD's robustness and its adaptability to quantum mechanical subtleties inherent in the excited states of the molecule.
+
 
 
 
