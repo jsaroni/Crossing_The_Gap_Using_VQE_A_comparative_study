@@ -62,9 +62,11 @@ These compelling findings highlight SS-VQE's potential to transform the landscap
 
 ![Exp1_Noiseless](/Figures/SSVQE_LiH_sz1.png "Noiseless")
 
+
+
+<a href="https://www.credly.com/badges/93cc0c95-3361-4c6e-b127-18be15d70b0b" rel="nofollow">
 <img src="https://github.com/jsaroni/QHack_2024_Qjins_Project/tree/main/Figures/SSVQE_LiH_sz1.png" width="250" height="250" style="max-width: 100%;">
-
-
+</a>
 
 
 
