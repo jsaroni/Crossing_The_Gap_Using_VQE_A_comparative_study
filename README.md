@@ -62,6 +62,6 @@ These compelling findings highlight SS-VQE's potential to transform the landscap
 
 ![](/Figures/SSVQE_LiH_sz1.png "SSVQE_sz1" = 250x250)
 
-
+<img src='Figures/SSVQE_LiH_sz1.png' width='25'>
 
 
