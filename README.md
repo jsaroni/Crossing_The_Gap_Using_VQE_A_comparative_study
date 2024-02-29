@@ -49,7 +49,7 @@ By accounting for the parameter space's geometry, the QNG optimizer significantl
 
 Algorithm~\ref{alg:VQE_QNG} delineates the procedural steps for incorporating QNG optimization within the VQE.
 
-### Results
+## Results
 In our study, we meticulously analyzed the efficacy of the SS-VQE for calculating the energy states of $LiH$, emphasizing its performance in different spin subspaces. The results are distilled into Figs. \ref{ess1} and \ref{ess2} show the energy profiles for the ground and excited states at $S_z=0$ and $S_z=1$ cases respectively.
 Fig. \ref{ess1} reveals the SS-VQE's proficiency in approximating the singlet ground state (S0) and triplet first excited state (T1) of $LiH$ at $S_z=0$. The alignment of SS-VQE results with the exact theoretical calculations is particularly noteworthy for shorter bond lengths, a region crucial for understanding chemical bonding and reactions. The observed convergence of energy values at increased atomic separations reflects the algorithm's capability to capture the dissociative characteristics of the molecule, demonstrating its robustness in quantum state representation for non-interacting atomic scenarios.
 Fig. \ref{ess1}  extends this comparison to $S_z=1$, offering insights into the SS-VQE's ability to model excited spin states accurately. The close correlation between SS-VQE and exact calculations for T1 and T2 states across various atomic distances underscores the versatility of the algorithm. This precision holds even as the bond lengthens, indicating that SS-VQE can adeptly model the $LiH$ molecule's behavior under stretched conditions, which is vital for simulating molecular dynamics.
@@ -60,19 +60,29 @@ Fig. \ref{rss2}  further corroborates the method's precision, where the SS-VQE s
 
 These compelling findings highlight SS-VQE's potential to transform the landscape of quantum computational chemistry. The accuracy and precision demonstrated in this study pave the way for advanced modeling of molecular systems, offering a new lens through which we can observe and predict the quantum behavior of chemical substances. The implications of this work are profound, promising advancements in fields ranging from material science to pharmaceutical development, where the understanding of quantum states is fundamental.
 
+### SS-VQE
 
  <img src='Figures/SSVQE_LiH_sz0.png' width='400'> <img src='Figures/SSVQE_LiH_sz1.png' width='400'> 
  <img src='Figures/VQD_LiH_sz0.png' width='400'> <img src='Figures/VQD_LiH_sz1.png' width='400'> 
 
 
 
-
+### VQD
 The VQD approach has been meticulously evaluated for its ability to predict the energy states of $LiH$, focusing on its performance across different spin subspaces, $S_z=0$ and (b) $S_z=1$. The analyses encompass both the accuracy of the energy estimations and the relative errors in these calculations.
 The energy profiles of $LiH$ obtained via VQD display remarkable fidelity to the exact theoretical calculations, with a pronounced accuracy in the chemically significant region of shorter bond lengths. As shown in Figs. \ref{VQD1} and \ref{VQD2}, VQD's calculated energies for the ground and excited states at$S_z=0$ and  $S_z=1$, respectively, closely track the exact values across a range of atomic separations. This agreement is particularly noticeable in the molecular dissociation limit, where VQD and exact calculations predict the energy levels' convergence toward a constant value.
 
 The relative error analyses are shown in Figs. \ref{rVQD1} and \ref{rVQD2} for $S_z=0$ and $S_z=1$, further underscore the precision of the VQD approach. The errors remain exceptionally low, with the largest observed errors not exceeding 0.0175\% for $S_z=0$ and peaking just below 0.0010\% for the excited states at $S_z=1$ These low relative errors across the atomic units underscore the VQD's robustness and its adaptability to quantum mechanical subtleties inherent in the excited states of the molecule.
 
+### QNG Optimizer Effect
+Our investigation employed a VQE framework enhanced by the QNG optimizer to determine the ground state energies of hydrogen (\(H_2\)), lithium hydride (\(LiH\)), and beryllium hydride (\(BeH_2\)) molecules. The results underscore the QNG optimizer's efficacy in navigating the optimization landscape, accelerating convergence to the ground state energy compared to traditional gradient descent methods.
 
 
+
+For the \(H_2\) molecule, initial optimization efforts using traditional gradient descent exhibited gradual energy reductions, achieving a final convergence parameter of \(0.00000097\) Ha after 120 iterations. Notably, the introduction of QNG optimization markedly improved the efficiency, reaching a similar convergence threshold of \(0.00000022\) Ha in merely 16 iterations, as summarized below:
+
+
+* Initial Energy: \(-0.09424484\) Ha.
+* Final GD Energy: \(-1.13615247\) Ha after 120 iterations.
+* Final QNG Energy: \(-1.13618926\) Ha after 16 iterations.
 
 
