@@ -60,14 +60,7 @@ Fig. \ref{rss2}  further corroborates the method's precision, where the SS-VQE s
 
 These compelling findings highlight SS-VQE's potential to transform the landscape of quantum computational chemistry. The accuracy and precision demonstrated in this study pave the way for advanced modeling of molecular systems, offering a new lens through which we can observe and predict the quantum behavior of chemical substances. The implications of this work are profound, promising advancements in fields ranging from material science to pharmaceutical development, where the understanding of quantum states is fundamental.
 
-![Exp1_Noiseless](/Figures/SSVQE_LiH_sz1.png "Noiseless" width = "250")
-
-
-
-<a href="https://www.credly.com/badges/93cc0c95-3361-4c6e-b127-18be15d70b0b" rel="nofollow">
-<img src="https://github.com/jsaroni/QHack_2024_Qjins_Project/tree/main/Figures/SSVQE_LiH_sz1.png" width="250" height="250" style="max-width: 100%;">
-</a>
-
+![SSVQE](/Figures/SSVQE_LiH_sz1.png "SSVQE_sz1")
 
 
 
