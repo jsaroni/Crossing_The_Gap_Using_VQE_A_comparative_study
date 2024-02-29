@@ -11,7 +11,7 @@ The Subspace-Search Variational Quantum Eigensolver (SS-VQE) is an algorithm des
 This approach minimize the following loss function
 
 ```math
-\mathcal{L}_w(\theta) = & w\bra{\psi_k}U^\dagger(\theta)HU(\theta)\ket{\psi_k} +\sum_{j=0}^{k-1}\bra{\psi_j}U^\dagger(\theta)HU(\theta)\ket{\psi_j}$$
+\mathcal{L}_w(\theta) = & w\bra{\psi_k}U^\dagger(\theta)HU(\theta)\ket{\psi_k} +\sum_{j=0}^{k-1}\bra{\psi_j}U^\dagger(\theta)HU(\theta)\ket{\psi_j}
 ```
 
 where the cost $\mathcal{L}_w$ gets its global optimum, the circuit $U(\theta)$ maps $\ket{\psi_k}$ to the k-th excited state $\ket{E_k}$ of the Hamiltonian(H) and others to the
