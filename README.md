@@ -9,10 +9,7 @@ Additionally, our comparative analysis reveals that both subspace variational qu
 ### Subspace-Search Variational Quantum Eigensolver
 The Subspace-Search Variational Quantum Eigensolver (SS-VQE) is an algorithm designed to address the challenge of calculating excited states \cite{PhysRevResearch.1.033062}. SS-VQE efficiently explores a low-energy subspace to identify the k-th excited state by utilizing orthogonal input states and leveraging unitary transformations. It is worth noting that this method involves only two parameter optimization steps and eliminates the necessity for ancilla qubits. SS-VQE further generalizes all excited states up to the k-th through a single optimization procedure. Through careful parameter optimization, this approach ensures the orthogonality of input states and accurately maps them to energy eigenstates.
 This approach minimize the following loss function 
-$$
-\mathcal{L}_w(\theta) = & w\bra{\psi_k}U^\dagger(\theta)HU(\theta)\ket{\psi_k} \\
-& +\sum_{j=0}^{k-1}\bra{\psi_j}U^\dagger(\theta)HU(\theta)\ket{\psi_j}
-$$
+$$ \mathcal{L}_w(\theta) = & w\bra{\psi_k}U^\dagger(\theta)HU(\theta)\ket{\psi_k} +\sum_{j=0}^{k-1}\bra{\psi_j}U^\dagger(\theta)HU(\theta)\ket{\psi_j} $$
 
 where the cost $\mathcal{L}_w$ gets its global optimum, the circuit $U(\theta)$ maps $\ket{\psi_k}$ to the k-th excited state $\ket{E_k}$ of the Hamiltonian(H) and others to the
 subspace spanned by $\sum_{j=0}^{k-1} E_j$.
