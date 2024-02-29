@@ -15,7 +15,7 @@ This approach minimize the following loss function
 ```
 
 where the cost $\mathcal{L}_w$ gets its global optimum, the circuit $U(\theta)$ maps $\ket{\psi_k}$ to the k-th excited state $\ket{E_k}$ of the Hamiltonian(H) and others to the
-subspace spanned by $`\sum_j^k E_j`$.
+subspace spanned by $`\sum_{j=0} E_j`$ with $j$ bounded from above by $k-1$.
 
 ![a](https://latex.codecogs.com/svg.latex?\Large&space;H=\sum_{k=1}^N\overrightarrow{b}\cdot\overrightarrow{\sigma_k}+\sum_{p<q}^NJ_{pq}\overrightarrow{\sigma_p}\cdot\overrightarrow{\sigma_q})
 
