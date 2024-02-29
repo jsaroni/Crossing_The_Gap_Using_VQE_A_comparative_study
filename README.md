@@ -89,19 +89,19 @@ For the \(H_2\) molecule, initial optimization efforts using traditional gradien
 
 The optimization for the \(LiH\) molecule demonstrated the QNG optimizer's ability to reduce the energy across iterations consistently. The final ground state energy attained via QNG optimization was \(-7.60898098\) Ha, showcasing a significant improvement over traditional methods:
 
-\begin{itemize}
-    \item Initial Energy: \(-3.80567655\) Ha.
-    \item Final GD Energy: \(-7.60440889\) Ha after 190 iterations.
-    \item Final QNG Energy: \(-7.60898098\) Ha after 190 iterations.
-\end{itemize}
+
+* Initial Energy: \(-3.80567655\) Ha.
+* Final GD Energy: \(-7.60440889\) Ha after 190 iterations.
+* Final QNG Energy: \(-7.60898098\) Ha after 190 iterations.
+
 
 For \(BeH_2\), both optimization approaches converged to a similar energy value, indicating the potential limitations of traditional optimization methods for more complex molecular systems. The final energies underscore the precision of QNG in fine-tuning the variational parameters:
 
-\begin{itemize}
-    \item Initial Energy: \(-4.62101342\) Ha.
-    \item Final GD Energy: \(-13.08284703\) Ha after 140 iterations.
-    \item Final QNG Energy: \(-13.08286007\) Ha after 10 iterations.
-\end{itemize}
+
+* Initial Energy: \(-4.62101342\) Ha.
+* Final GD Energy: \(-13.08284703\) Ha after 140 iterations.
+* Final QNG Energy: \(-13.08286007\) Ha after 10 iterations.
+
 
 
 As presented in Fig. \ref{fig:energy-convergence}, these results clearly illustrate the advantage of employing the QNG in the VQE algorithm, particularly in terms of efficiency and convergence speed. The marked improvement in optimization performance across different molecular systems underscores the potential of QNG to enhance quantum computational chemistry applications. Fig. \ref{fig:gs} shows energy estimations across various atomic distances using QNG and adaptive VQE for $LiH$ \cite{AdaptiveVQE}. This approach includes a recipe to adaptively select gates that have a significant contribution to the desired state. We select only gates that have a predefined threshold above $10^{-5}$. The results closely match the expected from exact diagonalization exemplifying QNG quantum chemistry applicability.
