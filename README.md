@@ -83,13 +83,13 @@ To run the code, install the requirements as follows, <br>
 
 ## References
 [1] K. M. Nakanishi, K. Mitarai, and K. Fujii, “Subspace-search variational quantum eigensolver for excited states,” Phys. Rev.
-Res., vol. 1, p. 033062, Oct 2019. [Online]. Available: https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.1.033062
-[2] O. Higgott, D. Wang, and S. Brierley, “Variational Quantum Computation
-of Excited States,” Quantum, vol. 3, p. 156, Jul. 2019. [Online]. Available: https://doi.org/10.22331/q-2019-07-01-156
-[3] L. C. Tazi and A. J. W. Thom, “Folded spectrum vqe : A quantum computing method for the calculation of molecular excited states,” 2023.
-[4] J. Stokes, J. Izaac, N. Killoran, and G. Carleo, “Quantum natural gradient,” Quantum, vol. 4, p. 269, May 2020.
+Res., vol. 1, p. 033062, Oct 2019. [Online]. Available: https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.1.033062 <br>
+[2] O. Higgott, D. Wang, and S. Brierley, “Variational Quantum Computation 
+of Excited States,” Quantum, vol. 3, p. 156, Jul. 2019. [Online]. Available: https://doi.org/10.22331/q-2019-07-01-156 <br>
+[3] L. C. Tazi and A. J. W. Thom, “Folded spectrum vqe : A quantum computing method for the calculation of molecular excited states,” 2023.  <br>
+[4] J. Stokes, J. Izaac, N. Killoran, and G. Carleo, “Quantum natural gradient,” Quantum, vol. 4, p. 269, May 2020.  <br>
 [5] H. R. Grimsley, S. E. Economou, E. Barnes, and N. J. Mayhall, “An adaptive variational algorithm for exact molecular simulations on a
-quantum computer,” Nature Communications, vol. 10, July 2019.
+quantum computer,” Nature Communications, vol. 10, July 2019.  <br>
 [6] G. Vidal, “Class of quantum many-body states that can be efficiently simulated,” Phys. Rev. Lett., vol. 101, p. 110501, Sep 2008. [Online].
 Available: https://link.aps.org/doi/10.1103/PhysRevLett.101.110501
 
