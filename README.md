@@ -76,7 +76,7 @@ Looking ahead, the convergence of these advanced quantum computational methods o
 **Jason Saroni ([@jsaroni](https://github.com/jsaroni))**
 
 ## Requirements
-To run the code, install the requirements as follows, <br>
+To run the codes, install the requirements as follows, <br>
 
 `!pip install pennylane`<br>
 `!pip install pennylane-qchem`<br>
