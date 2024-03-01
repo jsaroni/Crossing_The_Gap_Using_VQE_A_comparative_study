@@ -74,5 +74,10 @@ Looking ahead, the convergence of these advanced quantum computational methods o
 **Nouhaila Innan ([@innanov](https://github.com/innanov))**<br>
 **Suman Kumar Roy ([@roysuman088](https://github.com/roysuman088))**
 
+## Requirements
+To run the code, install the following requirements
+`!pip install pennylane`<br>
+`!pip install pennylane-qchem`
+
 ## References
 [1] 
