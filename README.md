@@ -72,7 +72,8 @@ Looking ahead, the convergence of these advanced quantum computational methods o
 ## Contributors
 **I-Chi Chen ([@ichen17](https://github.com/ichen17))**<br>
 **Nouhaila Innan ([@innanov](https://github.com/innanov))**<br>
-**Suman Kumar Roy ([@roysuman088](https://github.com/roysuman088))**
+**Suman Kumar Roy ([@roysuman088](https://github.com/roysuman088))**<br>
+**Jason Saroni ([@jsaroni](https://github.com/jsaroni))**
 
 ## Requirements
 To run the code, install the requirements as follows, <br>
