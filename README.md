@@ -53,6 +53,9 @@ By accounting for the parameter space's geometry, the QNG optimizer significantl
 In addition to using QNG to reduce the number of iterations for convergence, we apply Pauli tapering, leveraging $Z_2$ molecular hamiltonian symmetries to reduce the number of qubits required for the VQE simulation. Additionally, we test the use of the MERA tensor network ansatz \cite{PhysRevLett.101.110501} and find that it greatly improves the speed at which a SSVQE custom algorithm finds the first excited state at the expense of accuracy at certain distance values as shown in Fig.~\ref{fig:tensorLiH}. 
 
 
+## Results
+See [Paper](https://github.com/jsaroni/QHack_2024_Qjins_Project/blob/main/QHack_2024_Project.pdf)
+
 ## Conclusion
 
 Our investigation into advanced variational quantum algorithms, notably SS-VQE, VQD, Folded Spectrum VQE, and VQE with QNG, illuminates the path forward in quantum computational chemistry. These methodologies, each with its unique approach to navigating the challenges of quantum optimization, collectively underscore a significant leap toward harnessing quantum computing's potential for chemical and material science.
