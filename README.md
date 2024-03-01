@@ -7,7 +7,7 @@ Additionally, our comparative analysis reveals that both subspace variational qu
 
 ## Methodology
 ### Subspace-Search Variational Quantum Eigensolver
-The Subspace-Search Variational Quantum Eigensolver (SS-VQE) is an algorithm designed to address the challenge of calculating excited states \cite{PhysRevResearch.1.033062}. SS-VQE efficiently explores a low-energy subspace to identify the k-th excited state by utilizing orthogonal input states and leveraging unitary transformations. It is worth noting that this method involves only two parameter optimization steps and eliminates the necessity for ancilla qubits. SS-VQE further generalizes all excited states up to the k-th through a single optimization procedure. Through careful parameter optimization, this approach ensures the orthogonality of input states and accurately maps them to energy eigenstates.
+The Subspace-Search Variational Quantum Eigensolver (SS-VQE) is an algorithm designed to address the challenge of calculating excited states [[1]](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.1.033062). SS-VQE efficiently explores a low-energy subspace to identify the k-th excited state by utilizing orthogonal input states and leveraging unitary transformations. It is worth noting that this method involves only two parameter optimization steps and eliminates the necessity for ancilla qubits. SS-VQE further generalizes all excited states up to the k-th through a single optimization procedure. Through careful parameter optimization, this approach ensures the orthogonality of input states and accurately maps them to energy eigenstates.
 This approach minimize the following loss function
 
 ```math
@@ -66,7 +66,7 @@ Folded Spectrum VQE further extends the versatility of quantum algorithms to ide
 Most notably, QNG stands out for its efficiency, significantly reducing the number of iterations required for convergence. By intelligently navigating the optimization landscape, QNG enhances computational efficiency and sets a new standard for precision in quantum computing optimizations.
 Looking ahead, the convergence of these advanced quantum computational methods opens new horizons for exploring chemical molecules in unprecedented detail. This study's remarkable accuracy and efficiency beckon a future where quantum computing plays a central role in unraveling complex chemical mysteries, potentially revolutionizing our approach to material synthesis, drug discovery, and beyond. As we refine these algorithms and adapt them to more complex systems, the promise of quantum computational chemistry to contribute meaningful insights into the natural world becomes increasingly tangible.
 
-[[1]](https://arxiv.org/pdf/2102.12556.pdf?fbclid=IwAR2tZhjENa6-5z-XVVKu4VEPcE05QslG6C4XifwfqrPfNmiFzuoe97Sm5tA).
+
 
 
 ## Contributors
@@ -82,4 +82,6 @@ To run the code, install the requirements as follows, <br>
 `!pip install matplotlib`
 
 ## References
-[1] 
+[1] K. M. Nakanishi, K. Mitarai, and K. Fujii, “Subspace-search
+variational quantum eigensolver for excited states,” Phys. Rev.
+Res., vol. 1, p. 033062, Oct 2019. [Online]. Available: https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.1.033062
