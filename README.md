@@ -75,9 +75,11 @@ Looking ahead, the convergence of these advanced quantum computational methods o
 **Suman Kumar Roy ([@roysuman088](https://github.com/roysuman088))**
 
 ## Requirements
-To run the code, install the following requirements
+To run the code, install the requirements as follows, <br>
+
 `!pip install pennylane`<br>
-`!pip install pennylane-qchem`
+`!pip install pennylane-qchem`<br>
+`!pip install matplotlib`
 
 ## References
 [1] 
