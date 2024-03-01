@@ -19,7 +19,7 @@ subspace spanned by $`\sum_{j=0} E_j`$ with $j$ bounded from above by $k-1$.
 
 ### Variational Quantum Deflation
 
-The potential of VQE for near-term quantum computing is generating excitement for the advancement of computational capabilities.  \cite{Higgott2019variationalquantum} study aims to enhance VQE's functionality by efficiently identifying excited states. By incorporating ``overlap'' terms into the optimization function and leveraging Hermitian matrices, which consist of a complete set of orthogonal eigenvectors, this work demonstrates a cost-effective approach. Utilizing VQE's ability to maintain classical parameters, low-depth quantum circuits are employed to compute these overlap terms. This methodology maintains the same qubit count as VQE for ground-state calculations, with only a minor increase in measurements. In contrast to existing methods for computing excited states in quantum computing, this approach minimizes resource overhead. The following loss function has been provided over this work. 
+The potential of VQE for near-term quantum computing is generating excitement for the advancement of computational capabilities. [[2]](https://quantum-journal.org/papers/q-2019-07-01-156/) study aims to enhance VQE's functionality by efficiently identifying excited states. By incorporating ``overlap'' terms into the optimization function and leveraging Hermitian matrices, which consist of a complete set of orthogonal eigenvectors, this work demonstrates a cost-effective approach. Utilizing VQE's ability to maintain classical parameters, low-depth quantum circuits are employed to compute these overlap terms. This methodology maintains the same qubit count as VQE for ground-state calculations, with only a minor increase in measurements. In contrast to existing methods for computing excited states in quantum computing, this approach minimizes resource overhead. The following loss function has been provided over this work. 
 ```math
 \mathcal{L}(\lambda_k) =  \bra{\psi(\lambda_k)}H\ket{\psi(\lambda_k)} +\sum_{i=0}^{k-1} \beta_i |\braket{\psi(\lambda_k)|\psi(\lambda_i)}|^2
 ```
@@ -82,6 +82,14 @@ To run the code, install the requirements as follows, <br>
 `!pip install matplotlib`
 
 ## References
-[1] K. M. Nakanishi, K. Mitarai, and K. Fujii, “Subspace-search
-variational quantum eigensolver for excited states,” Phys. Rev.
+[1] K. M. Nakanishi, K. Mitarai, and K. Fujii, “Subspace-search variational quantum eigensolver for excited states,” Phys. Rev.
 Res., vol. 1, p. 033062, Oct 2019. [Online]. Available: https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.1.033062
+[2] O. Higgott, D. Wang, and S. Brierley, “Variational Quantum Computation
+of Excited States,” Quantum, vol. 3, p. 156, Jul. 2019. [Online]. Available: https://doi.org/10.22331/q-2019-07-01-156
+[3] L. C. Tazi and A. J. W. Thom, “Folded spectrum vqe : A quantum computing method for the calculation of molecular excited states,” 2023.
+[4] J. Stokes, J. Izaac, N. Killoran, and G. Carleo, “Quantum natural gradient,” Quantum, vol. 4, p. 269, May 2020.
+[5] H. R. Grimsley, S. E. Economou, E. Barnes, and N. J. Mayhall, “An adaptive variational algorithm for exact molecular simulations on a
+quantum computer,” Nature Communications, vol. 10, July 2019.
+[6] G. Vidal, “Class of quantum many-body states that can be efficiently simulated,” Phys. Rev. Lett., vol. 101, p. 110501, Sep 2008. [Online].
+Available: https://link.aps.org/doi/10.1103/PhysRevLett.101.110501
+
