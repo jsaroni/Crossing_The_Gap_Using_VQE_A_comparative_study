@@ -54,7 +54,7 @@ In addition to using QNG to reduce the number of iterations for convergence, we 
 
 
 ## Results
-See [Paper](https://github.com/jsaroni/QHack_2024_Qjins_Project/blob/main/QHack_2024_Project.pdf) or [Presentation](https://github.com/jsaroni/QHack_2024_Qjins_Project/blob/main/Presentation.pptx).
+See [Paper](https://github.com/jsaroni/QHack_2024_Qjins_Project/blob/main/Paper.pdf) or [Presentation](https://github.com/jsaroni/QHack_2024_Qjins_Project/blob/main/Presentation.pptx).
 
 ## Conclusion
 
