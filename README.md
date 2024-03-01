@@ -126,6 +126,9 @@ Looking ahead, the convergence of these advanced quantum computational methods o
 
 ## Prepared by
 **Jason Saroni ([@jsaroni](https://github.com/jsaroni))**<br>
+**I-Chi Chen ([@ichen17](https://github.com/ichen17))**<br>
+**Nouhaila Innan ([@innanov](https://github.com/innanov))**<br>
+**Suman Kumar Roy ([@roysuman088](https://github.com/roysuman088))**
 
 ## References
 [1] 
