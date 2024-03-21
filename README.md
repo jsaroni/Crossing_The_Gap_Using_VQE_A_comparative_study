@@ -50,7 +50,7 @@ By accounting for the parameter space's geometry, the QNG optimizer significantl
 
 
 ### Exploring algorithm speed improvement
-In addition to using QNG to reduce the number of iterations for convergence, we apply Pauli tapering, leveraging $Z_2$ molecular hamiltonian symmetries to reduce the number of qubits required for the VQE simulation. Additionally, we test the use of the MERA tensor network ansatz [[6]](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.101.110501) and find that it greatly improves the speed at which an SS-VQE custom algorithm finds the first excited state at the expense of accuracy at certain atomic separation values.
+In addition to using QNG to reduce the number of iterations for convergence, we apply Pauli tapering [here](https://github.com/jsaroni/Crossing_The_Gap_Using_VQE_A_comparative_study/blob/main/Codes/Tapered_Hamiltonian_SS_VQE_with_tensor_network_ansatz.ipynb), leveraging $Z_2$ molecular hamiltonian symmetries to reduce the number of qubits required for the VQE simulation. Additionally, we test the use of the MERA tensor network ansatz [[6]](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.101.110501) and find that it greatly improves the speed at which an SS-VQE custom algorithm finds the first excited state at the expense of accuracy at certain atomic separation values.
 
 
 ## Results
