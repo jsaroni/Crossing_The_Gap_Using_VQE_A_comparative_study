@@ -1,6 +1,6 @@
 # Crossing The Gap Using VQE: A comparative study
-## Project Description
-The statement of our chosen challenge, Bridging the Gap, was as follows:
+## Problem Statement
+The statement of our chosen challenge, Bridging the Gap, is as follows:
 The spectral gap is an important feature that allows us to obtain relevant information for instance in the study of batteries. The challenge here will be to design an algorithm capable of obtaining this value.
 
 ## Project Description
