@@ -4,7 +4,7 @@ The statement of our chosen challenge, Bridging the Gap, is as follows:
 The spectral gap is an important feature that allows us to obtain relevant information for instance in the study of batteries. The challenge here will be to design an algorithm capable of obtaining this value.
 
 ## Project Description
-Within the evolving domain of quantum computational chemistry, the Variational Quantum Eigensolver (VQE) is a promising algorithm for implementation on near-term quantum computers. This work investigates the proficiency of variational quantum algorithms, particularly adaptive VQE techniques, and Quantum Natural Gradient (QNG) optimization, in calculating the spectral gap of chemical molecules—a key determinant of material characteristics and chemical behavior. Our methodology introduces different approaches to estimating the k-th excited state by mapping highly excited states to the ground state via unitary transformations, broadening VQE's applicability.
+The Variational Quantum Eigensolver (VQE) is a promising algorithm for implementation on near-term quantum computers within the evolving domain of quantum computational chemistry,. This work investigates the proficiency of variational quantum algorithms, particularly adaptive VQE techniques, and Quantum Natural Gradient (QNG) optimization, in calculating the spectral gap of chemical molecules—a key determinant of material characteristics and chemical behavior. Our methodology introduces different approaches to estimating the k-th excited state by mapping highly excited states to the ground state via unitary transformations, broadening VQE's applicability.
 Our research focuses on analyzing three molecular systems, $H_2$, $LiH$, and $BeH_2$, to demonstrate the versatility and precision of our proposed methods. A significant highlight of our study is the implementation of QNG optimization, which markedly improves the optimization process's efficiency. It consistently minimizes the ground state energy while achieving convergence in fewer iterations than traditional gradient descent optimizers. This efficiency underscores the advantage of QNG in navigating the complex optimization landscape of quantum parameters more effectively.
 Additionally, our comparative analysis reveals that both subspace variational quantum eigensolver (SS-VQE) and quantum variational deflation (VQD) methods exhibit strong performance in spectral gap determination, with less than 1\% relative error for $LiH$, and notably, VQD achieves an exceptional 99.99\% accuracy. Lastly we explore Pauli tapering and the usage of a tensor network ansatz to improve algorithm speed.
 
@@ -74,10 +74,7 @@ Looking ahead, the convergence of these advanced quantum computational methods o
 
 
 ## Contributors
-**I-Chi Chen ([@ichen17](https://github.com/ichen17))**<br>
-**Nouhaila Innan ([@innanov](https://github.com/innanov))**<br>
-**Suman Kumar Roy ([@roysuman088](https://github.com/roysuman088))**<br>
-**Jason Saroni ([@jsaroni](https://github.com/jsaroni))**
+https://github.com/jsaroni/Crossing_The_Gap_Using_VQE_A_comparative_study/graphs/contributors
 
 ## Requirements
 To run the codes, install the requirements as follows, <br>
